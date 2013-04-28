@@ -80,7 +80,7 @@ class Library_Database extends PDO {
 		}
 
 		if($log === true)
-			$this->logMessage($query);
+			$this->write2Log($query);
 
 		return $query;
 	}
